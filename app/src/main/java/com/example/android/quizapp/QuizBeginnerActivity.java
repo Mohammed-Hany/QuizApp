@@ -19,16 +19,73 @@ import android.widget.Toast;
 
 public class QuizBeginnerActivity extends AppCompatActivity {
 
+    TextView bAnswer1;
+    TextView bAnswer2;
+    TextView bAnswer3;
+    TextView bAnswer4;
+    TextView bAnswer5;
+    TextView bAnswer6;
+    TextView bAnswer7;
+    TextView seeMore1b;
+    TextView seeMore2b;
+    TextView seeMore3b;
+    TextView seeMore4b;
+    TextView seeMore5b;
+    TextView seeMore6b;
+    TextView seeMore7b;
+    Button bNext;
+    Button bSubmit;
+    EditText bText;
+    RadioGroup bRadio1;
+    RadioGroup bRadio2;
+    RadioGroup bRadio3;
+    RadioGroup bRadio4;
+    RadioGroup bRadio5;
+    RadioGroup bRadio6;
+    RadioGroup bRadio7;
+    CheckBox bBox1;
+    CheckBox bBox2;
+    CheckBox bBox3;
+    CheckBox bBox4;
+
     int beginnerScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_beginner);
+        bAnswer1 = findViewById(R.id.beginnerAnswer1);
+        bAnswer2 = findViewById(R.id.beginnerAnswer2);
+        bAnswer3 = findViewById(R.id.beginnerAnswer3);
+        bAnswer4 = findViewById(R.id.beginnerAnswer4);
+        bAnswer5 = findViewById(R.id.beginnerAnswer5);
+        bAnswer6 = findViewById(R.id.beginnerAnswer6);
+        bAnswer7 = findViewById(R.id.beginnerAnswer7);
+        seeMore1b = findViewById(R.id.beginnerReference1);
+        seeMore2b = findViewById(R.id.beginnerReference2);
+        seeMore3b = findViewById(R.id.beginnerReference3);
+        seeMore4b = findViewById(R.id.beginnerReference4);
+        seeMore5b = findViewById(R.id.beginnerReference5);
+        seeMore6b = findViewById(R.id.beginnerReference6);
+        seeMore7b = findViewById(R.id.beginnerReference7);
+        bNext = findViewById(R.id.bNextButton);
+        bSubmit = findViewById(R.id.bSubmitButton);
+        bText = findViewById(R.id.editText);
+        bRadio1 = findViewById(R.id.q1Radio);
+        bRadio2 = findViewById(R.id.q2Radio);
+        bRadio3 = findViewById(R.id.q3Radio);
+        bRadio4 = findViewById(R.id.q4Radio);
+        bRadio5 = findViewById(R.id.q7Radio);
+        bRadio6 = findViewById(R.id.q8Radio);
+        bRadio7 = findViewById(R.id.q9Radio);
+        bBox1 = findViewById(R.id.ck1);
+        bBox2 = findViewById(R.id.ck2);
+        bBox3 = findViewById(R.id.ck3);
+        bBox4 = findViewById(R.id.ck4);
+
         bHideReferences();
 
-        Button submit = findViewById(R.id.bSubmitButton);
-        submit.setOnClickListener(new View.OnClickListener() {
+        bSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -38,18 +95,18 @@ public class QuizBeginnerActivity extends AppCompatActivity {
                 }
                 else{
                     bShowReferences();
-                    bGetAnswers(1, R.id.q1Radio);
-                    bGetAnswers(1, R.id.q2Radio);
-                    bGetAnswers(1, R.id.q3Radio);
-                    bGetAnswers(1, R.id.q4Radio);
-                    bGetAnswers(1, R.id.q7Radio);
-                    bGetAnswers(1, R.id.q8Radio);
-                    bGetAnswers(1, R.id.q9Radio);
-                    bGetAnswers(2, R.id.ck1);
-                    bGetAnswers(2, R.id.ck2);
-                    bGetAnswers(2, R.id.ck3);
-                    bGetAnswers(2, R.id.ck4);
-                    bGetAnswers(3, R.id.editText);
+                    bGetAnswers(bRadio1);
+                    bGetAnswers(bRadio2);
+                    bGetAnswers(bRadio3);
+                    bGetAnswers(bRadio4);
+                    bGetAnswers(bRadio5);
+                    bGetAnswers(bRadio6);
+                    bGetAnswers(bRadio7);
+                    bGetAnswers(bBox1);
+                    bGetAnswers(bBox2);
+                    bGetAnswers(bBox3);
+                    bGetAnswers(bBox4);
+                    bGetAnswers(bText);
 
 
                 }
@@ -58,8 +115,7 @@ public class QuizBeginnerActivity extends AppCompatActivity {
         });
 
         //Passing the username and score to the result activity and launching.
-        Button next = findViewById(R.id.bNextButton);
-        next.setOnClickListener(new View.OnClickListener() {
+        bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String uName = getIntent().getStringExtra("bUName");
@@ -71,72 +127,60 @@ public class QuizBeginnerActivity extends AppCompatActivity {
         });
     }
 
-    // this method blocks all the choices and determines whether the wrong or the right answers are clicked.
-    public void bGetAnswers(int type, int id) {
 
-        if(type == 1){
-            RadioGroup group = findViewById(id);
-            if (group.getCheckedRadioButtonId() != R.id.answer1 || group.getCheckedRadioButtonId() != R.id.answer2 || group.getCheckedRadioButtonId() != R.id.answer3 || group.getCheckedRadioButtonId() != R.id.answer4 || group.getCheckedRadioButtonId() != R.id.answer5 || group.getCheckedRadioButtonId() != R.id.answer6 || group.getCheckedRadioButtonId() != R.id.answer7) {
-                RadioButton radioButton = (RadioButton) findViewById(group.getCheckedRadioButtonId());
+
+    // this method blocks all the choices and determines whether the wrong or the right answers are clicked.
+    public void bGetAnswers(View view) {
+
+        if (view instanceof RadioGroup) {
+            if (((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer1 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer2 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer3 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer4 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer5 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer6 || ((RadioGroup) view).getCheckedRadioButtonId() != R.id.answer7) {
+                RadioButton radioButton = (RadioButton) findViewById(((RadioGroup) view).getCheckedRadioButtonId());
                 radioButton.setBackgroundColor(0xCCE53935);
             }
-            if (group.getCheckedRadioButtonId() == R.id.answer1 || group.getCheckedRadioButtonId() == R.id.answer2 || group.getCheckedRadioButtonId() == R.id.answer3 || group.getCheckedRadioButtonId() == R.id.answer4 || group.getCheckedRadioButtonId() == R.id.answer5 || group.getCheckedRadioButtonId() == R.id.answer6 || group.getCheckedRadioButtonId() == R.id.answer7) {
-                beginnerScore ++;
+            if (((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer1 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer2 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer3 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer4 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer5 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer6 || ((RadioGroup) view).getCheckedRadioButtonId() == R.id.answer7) {
+                beginnerScore++;
             }
 
-                for (int i = 0; i < group.getChildCount(); i++) {
-                group.getChildAt(i).setEnabled(false);
+            for (int i = 0; i < ((RadioGroup) view).getChildCount(); i++) {
+                ((RadioGroup) view).getChildAt(i).setEnabled(false);
 
-                if (group.getChildAt(i).getId() == R.id.answer1 || group.getChildAt(i).getId() == R.id.answer2 || group.getChildAt(i).getId() == R.id.answer3 || group.getChildAt(i).getId() == R.id.answer4 || group.getChildAt(i).getId() == R.id.answer5 || group.getChildAt(i).getId() == R.id.answer6 || group.getChildAt(i).getId() == R.id.answer7) {
-                    group.getChildAt(i).setBackgroundColor(0xCC43A047);
+                if (((RadioGroup) view).getChildAt(i).getId() == R.id.answer1 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer2 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer3 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer4 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer5 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer6 || ((RadioGroup) view).getChildAt(i).getId() == R.id.answer7) {
+                    ((RadioGroup) view).getChildAt(i).setBackgroundColor(0xCC43A047);
                 }
             }
         }
 
 
-        if (type == 2) {
-            CheckBox checkBox = findViewById(id);
-            checkBox.setEnabled(false);
-            if (id == R.id.ck1 || id == R.id.ck2 || id == R.id.ck4) {
-                checkBox.setBackgroundColor(0xCC43A047);
-                if(checkBox.isChecked()){
+        if (view instanceof CheckBox) {
+            view.setEnabled(false);
+            if (view == bBox1|| view == bBox2 || view == bBox4) {
+                view.setBackgroundColor(0xCC43A047);
+                if(((CheckBox) view).isChecked()){
                     beginnerScore ++;
                 }
             }
             else {
-                if (checkBox.isChecked()) {
-                    checkBox.setBackgroundColor(0xCCE53935);
+                if (((CheckBox) view).isChecked()) {
+                    view.setBackgroundColor(0xCCE53935);
                 }
             }
         }
-        if (type == 3){
-            EditText editText = findViewById(id);
-            editText.setEnabled(false);
-            if (editText.getText().toString().toLowerCase().equals("china")) {
-                editText.setBackgroundColor(0xCC43A047);
+        if (view instanceof EditText){
+            view.setEnabled(false);
+            if (((EditText) view).getText().toString().toLowerCase().equals("china")) {
+                view.setBackgroundColor(0xCC43A047);
                 beginnerScore ++;
             }
             else {
-                editText.setBackgroundColor(0xCCE53935);
+                view.setBackgroundColor(0xCCE53935);
             }
         }
 
     }
     // this method checks whether if an answer is missing
     public boolean bCheckMissingAnswers(){
-        RadioGroup radio1 = findViewById(R.id.q1Radio);
-        RadioGroup radio2 = findViewById(R.id.q2Radio);
-        RadioGroup radio3 = findViewById(R.id.q3Radio);
-        RadioGroup radio4 = findViewById(R.id.q4Radio);
-        RadioGroup radio5 = findViewById(R.id.q7Radio);
-        RadioGroup radio6 = findViewById(R.id.q8Radio);
-        RadioGroup radio7 = findViewById(R.id.q9Radio);
-        CheckBox box1 = findViewById(R.id.ck1);
-        CheckBox box2 = findViewById(R.id.ck2);
-        CheckBox box3 = findViewById(R.id.ck3);
-        CheckBox box4 = findViewById(R.id.ck4);
-        EditText text = findViewById(R.id.editText);
-        if(radio1.getCheckedRadioButtonId() == -1 || radio2.getCheckedRadioButtonId() == -1 || radio3.getCheckedRadioButtonId() == -1 || radio4.getCheckedRadioButtonId() == -1 || radio5.getCheckedRadioButtonId() == -1 || radio6.getCheckedRadioButtonId() == -1 || radio7.getCheckedRadioButtonId() == -1 || (!box1.isChecked() && !box2.isChecked() && !box3.isChecked() && !box4.isChecked()) || text.getText().toString().length() == 0){
+
+        if(bRadio1.getCheckedRadioButtonId() == -1 || bRadio2.getCheckedRadioButtonId() == -1 || bRadio3.getCheckedRadioButtonId() == -1 || bRadio4.getCheckedRadioButtonId() == -1 || bRadio5.getCheckedRadioButtonId() == -1 || bRadio6.getCheckedRadioButtonId() == -1 || bRadio7.getCheckedRadioButtonId() == -1 || (!bBox1.isChecked() && !bBox2.isChecked() && !bBox3.isChecked() && !bBox4.isChecked()) || bText.getText().toString().length() == 0){
             return true;
         }
         else{
@@ -146,101 +190,66 @@ public class QuizBeginnerActivity extends AppCompatActivity {
     }
 
 
-//This method makes references hyperlinks and hide them with answers.
+
+    //This method makes references hyperlinks and hide them with answers.
     public void bHideReferences(){
-        TextView bAnswer1 = (TextView) findViewById(R.id.beginnerAnswer1);
         bAnswer1.setVisibility(View.GONE);
-
-        TextView bAnswer2 = (TextView) findViewById(R.id.beginnerAnswer2);
         bAnswer2.setVisibility(View.GONE);
-
-        TextView bAnswer3 = (TextView) findViewById(R.id.beginnerAnswer3);
         bAnswer3.setVisibility(View.GONE);
-
-        TextView bAnswer4 = (TextView) findViewById(R.id.beginnerAnswer4);
         bAnswer4.setVisibility(View.GONE);
-
-        TextView bAnswer5 = (TextView) findViewById(R.id.beginnerAnswer5);
         bAnswer5.setVisibility(View.GONE);
-
-        TextView bAnswer6 = (TextView) findViewById(R.id.beginnerAnswer6);
         bAnswer6.setVisibility(View.GONE);
-
-        TextView bAnswer7 = (TextView) findViewById(R.id.beginnerAnswer7);
         bAnswer7.setVisibility(View.GONE);
 
-        TextView seeMore1 =  (TextView) findViewById(R.id.beginnerReference1);
-        seeMore1.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore1.setVisibility(View.GONE);
+        seeMore1b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore1b.setVisibility(View.GONE);
 
-        TextView seeMore2 =  (TextView) findViewById(R.id.beginnerReference2);
-        seeMore2.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore2.setVisibility(View.GONE);
+        seeMore2b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore2b.setVisibility(View.GONE);
 
-        TextView seeMore3 =  (TextView) findViewById(R.id.beginnerReference3);
-        seeMore3.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore3.setVisibility(View.GONE);
+        seeMore3b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore3b.setVisibility(View.GONE);
 
-        TextView seeMore4 =  (TextView) findViewById(R.id.beginnerReference4);
-        seeMore4.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore4.setVisibility(View.GONE);
+        seeMore4b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore4b.setVisibility(View.GONE);
 
-        TextView seeMore5 =  (TextView) findViewById(R.id.beginnerReference5);
-        seeMore5.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore5.setVisibility(View.GONE);
+        seeMore5b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore5b.setVisibility(View.GONE);
 
-        TextView seeMore6 =  (TextView) findViewById(R.id.beginnerReference6);
-        seeMore6.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore6.setVisibility(View.GONE);
+        seeMore6b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore6b.setVisibility(View.GONE);
 
-        TextView seeMore7 =  (TextView) findViewById(R.id.beginnerReference7);
-        seeMore7.setMovementMethod(LinkMovementMethod.getInstance());
-        seeMore7.setVisibility(View.GONE);
+        seeMore7b.setMovementMethod(LinkMovementMethod.getInstance());
+        seeMore7b.setVisibility(View.GONE);
 
-        Button next = findViewById(R.id.bNextButton);
-        next.setVisibility(View.GONE);
+        bNext.setVisibility(View.GONE);
 
     }
 
 //This method  shows answers and references.
     public void bShowReferences(){
-        TextView seeMore1 =  (TextView) findViewById(R.id.beginnerReference1);
-        seeMore1.setVisibility(View.VISIBLE);
-        TextView bAnswer1 = (TextView) findViewById(R.id.beginnerAnswer1);
+        seeMore1b.setVisibility(View.VISIBLE);
         bAnswer1.setVisibility(View.VISIBLE);
 
-        TextView seeMore2 =  (TextView) findViewById(R.id.beginnerReference2);
-        seeMore2.setVisibility(View.VISIBLE);
-        TextView bAnswer2 = (TextView) findViewById(R.id.beginnerAnswer2);
+        seeMore2b.setVisibility(View.VISIBLE);
         bAnswer2.setVisibility(View.VISIBLE);
 
-        TextView seeMore3 =  (TextView) findViewById(R.id.beginnerReference3);
-        seeMore3.setVisibility(View.VISIBLE);
-        TextView bAnswer3 = (TextView) findViewById(R.id.beginnerAnswer3);
+        seeMore3b.setVisibility(View.VISIBLE);
         bAnswer3.setVisibility(View.VISIBLE);
 
-        TextView seeMore4 =  (TextView) findViewById(R.id.beginnerReference4);
-        seeMore4.setVisibility(View.VISIBLE);
-        TextView bAnswer4 = (TextView) findViewById(R.id.beginnerAnswer4);
+        seeMore4b.setVisibility(View.VISIBLE);
         bAnswer4.setVisibility(View.VISIBLE);
 
-        TextView seeMore5 =  (TextView) findViewById(R.id.beginnerReference5);
-        seeMore5.setVisibility(View.VISIBLE);
-        TextView bAnswer5 = (TextView) findViewById(R.id.beginnerAnswer5);
+        seeMore5b.setVisibility(View.VISIBLE);
         bAnswer5.setVisibility(View.VISIBLE);
 
-        TextView seeMore6 =  (TextView) findViewById(R.id.beginnerReference6);
-        seeMore6.setVisibility(View.VISIBLE);
-        TextView bAnswer6 = (TextView) findViewById(R.id.beginnerAnswer6);
+        seeMore6b.setVisibility(View.VISIBLE);
         bAnswer6.setVisibility(View.VISIBLE);
 
-        TextView seeMore7 =  (TextView) findViewById(R.id.beginnerReference7);
-        seeMore7.setVisibility(View.VISIBLE);
-        TextView bAnswer7 = (TextView) findViewById(R.id.beginnerAnswer7);
+        seeMore7b.setVisibility(View.VISIBLE);
         bAnswer7.setVisibility(View.VISIBLE);
 
-        Button next = findViewById(R.id.bNextButton);
-        next.setVisibility(View.VISIBLE);
+        bNext.setVisibility(View.VISIBLE);
 
     }
 }

@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         //Giving toast if there is something missing whether username or knowledge level.
          if (Name.length() >= 3 & spinnerItem > 0){
 
-             String man = "man";
 
              if(spinnerItem == 1){
                 Intent quizBeginner = new Intent(this, QuizBeginnerActivity.class);
