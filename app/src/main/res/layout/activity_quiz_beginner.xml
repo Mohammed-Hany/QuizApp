@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperhunt01"
+    tools:context="com.example.android.quizapp.QuizBeginnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/climatechange1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q1"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q1Radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/answer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:text="@string/True"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/False"
+                        android:textSize="@dimen/textAnswer"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/climatechange2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q2"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q2Radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BQ2_choice1"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:id="@+id/answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ2_choice2"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/all"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/none"
+                        android:textSize="@dimen/textAnswer"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/beginnerAnswer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:textColor="@android:color/black"
+                    android:background="@color/reference"
+                    android:text="@string/bAnswer1"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference1"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/climatechnageconsequences"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q3"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q3Radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BQ3_choice1"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ3_choice2"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ3_choice3"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ3_choice4"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:id="@+id/answer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/all"
+                        android:textSize="@dimen/textAnswer"/>
+
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/beginnerAnswer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@color/reference"
+                    android:textColor="@android:color/black"
+                    android:text="@string/bAnswer2"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference2"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/greenhouseeffect"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q4"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q4Radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BQ4_choice1"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:id="@+id/answer4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ4_choice2"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ4_choice3"
+                        android:textSize="@dimen/textAnswer"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/beginnerAnswer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@color/reference"
+                    android:textColor="@android:color/black"
+                    android:text="@string/bAnswer3"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference3"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/greenhousegases"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q5"
+                    android:textSize="@dimen/textQuestion"/>
+
+
+                <CheckBox
+                    android:id="@+id/ck1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/BQ5_choice1"
+                    android:textSize="@dimen/textAnswer"/>
+
+                <CheckBox
+                    android:id="@+id/ck2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/BQ5_choice2"
+                    android:textSize="@dimen/textAnswer"/>
+
+                <CheckBox
+                    android:id="@+id/ck3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/BQ5_choice3"
+                    android:textSize="@dimen/textAnswer"/>
+
+                <CheckBox
+                    android:id="@+id/ck4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/BQ5_choice4"
+                    android:textSize="@dimen/textAnswer"/>
+                <TextView
+                    android:id="@+id/beginnerAnswer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@android:color/black"
+                    android:background="@color/reference"
+                    android:text="@string/bAnswer4"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference4"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/beijingairpollution" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q6"
+                    android:textSize="@dimen/textQuestion" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/textAnswer" />
+                <TextView
+                    android:id="@+id/beginnerAnswer5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@color/reference"
+                    android:textColor="@android:color/black"
+                    android:text="@string/bAnswer5"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference5"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/wastefood"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q7"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q7Radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/answer5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/True"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/False"
+                        android:textSize="@dimen/textAnswer"/>
+
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/beginnerAnswer6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@color/reference"
+                    android:textColor="@android:color/black"
+                    android:text="@string/bAnswer6"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference6"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/economicandclimatechange"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q8"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q8Radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BQ8_choice1"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ8_choice2"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ8_choice3"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:id="@+id/answer6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ8_choice4"
+                        android:textSize="@dimen/textAnswer"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/beginnerAnswer7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@color/reference"
+                    android:textColor="@android:color/black"
+                    android:text="@string/bAnswer7"/>
+
+                <TextView
+                    android:id="@+id/beginnerReference7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textAnswer"
+                    android:paddingLeft="3dp"
+                    android:background="@color/reference"
+                    android:text="@string/bReference7"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/card"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/plantinggift"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/beginner_Q9"
+                    android:textSize="@dimen/textQuestion"/>
+
+                <RadioGroup
+                    android:id="@+id/q9Radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BQ9_choice1"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ9_choice2"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ9_choice3"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ9_choice4"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/BQ9_choice5"
+                        android:textSize="@dimen/textAnswer"/>
+
+                    <RadioButton
+                        android:id="@+id/answer7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/all"
+                        android:textSize="@dimen/textAnswer"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/bSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/submit"
+            android:textSize="@dimen/textQuestion"
+            android:textStyle="bold"
+            android:background="@drawable/login_button" />
+        <Button
+            android:id="@+id/bNextButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/login_button"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_marginRight="40dp"
+            android:textSize="@dimen/textQuestion"
+            android:textStyle="bold"
+            android:text="@string/next"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

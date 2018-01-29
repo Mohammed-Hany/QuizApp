@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="login_hint">User Name</string>
+    <string name="level_question">How Much Do You Know About Climate Change?</string>
+    <string name="login_button">Start Quiz</string>
+    <string name="beginner_Q1">There is no difference between climate change and global warming.</string>
+    <string name="True">True</string>
+    <string name="False">False</string>
+    <string name="beginner_Q2">What is climate change?</string>
+    <string name="BQ2_choice1">The long-term warming of our planet.</string>
+    <string name="BQ2_choice2">The broader range of changes that are happening to our planet.</string>
+    <string name="all">All of the above.</string>
+    <string name="none">None of the above.</string>
+    <string name="beginner_Q3">Which of the following are consequences associated with climate change?</string>
+    <string name="BQ3_choice1"> The ice sheets are declining, glaciers are in retreat globally, and our oceans are more acidic than ever.</string>
+    <string name="BQ3_choice2"> Surface temperatures are setting new heat records about each year.</string>
+    <string name="BQ3_choice3"> More extreme weather like droughts, heat waves, and hurricanes.</string>
+    <string name="BQ3_choice4"> Global sea levels are rising at an alarmingly fast rate — 17 centimeters (6.7 inches) in the last century alone and going higher.</string>
+    <string name="beginner_Q4">What is the \"Greenhouse Effect\"?</string>
+    <string name="BQ4_choice1"> The name of climate change legislation that passed by congress.</string>
+    <string name="BQ4_choice2"> When the gasses in our atmosphere trap heat and block it from escaping our planet.</string>
+    <string name="BQ4_choice3"> When you plant around your house to help fight climate change.</string>
+    <string name="beginner_Q5">Which of the following is a greenhouse gas?</string>
+    <string name="BQ5_choice1">CO2</string>
+    <string name="BQ5_choice2">Water vapor</string>
+    <string name="BQ5_choice3">Helium</string>
+    <string name="BQ5_choice4">CH4</string>
+    <string name="beginner_Q6">Which country emits the most carbon dioxide \"CO2"\?</string>
+    <string name="beginner_Q7">Wasting less food is a way to reduce greenhouse gas emissions.</string>
+    <string name="beginner_Q8">Globally, which of the following sectors emits the largest percentage of greenhouse gas emissions?</string>
+    <string name="BQ8_choice1">Transportation</string>
+    <string name="BQ8_choice2">Buildings</string>
+    <string name="BQ8_choice3">Industry</string>
+    <string name="BQ8_choice4"> Electricity and heat production</string>
+    <string name="beginner_Q9">What can we do to help fight climate change?</string>
+    <string name="BQ9_choice1">Reduce our food waste.</string>
+    <string name="BQ9_choice2">Engage ourselves in the science behind climate change.</string>
+    <string name="BQ9_choice3">Vote for political candidates who will advocate for climate-related legislation and policy improvements.</string>
+    <string name="BQ9_choice4">Reduce our electricity consumption.</string>
+    <string name="BQ9_choice5"> Divest from fossil fuel companies.</string>
+    <string name="submit">Submit And Check</string>
+    <string name="next">Next</string>
+    <string name="advanced_Q1">How much has the average global temperature risen by since 1880?</string>
+    <string name="AQ1_choice1"> 0.94 °C</string>
+    <string name="AQ1_choice2"> 0.52 °C</string>
+    <string name="AQ1_choice3"> 1.8 °C</string>
+    <string name="advanced_Q2">The concentration of CO2 in the atmosphere now is as high as it was (.....) years ago.</string>
+    <string name="AQ2_choice1">600</string>
+    <string name="AQ2_choice2">10 000</string>
+    <string name="AQ2_choice3">4 million</string>
+    <string name="advanced_Q3">How much has the extent of sea ice in the Arctic shrunk between 1980 and 2017?</string>
+    <string name="AQ3_choice1">10%</string>
+    <string name="AQ3_choice2">40%</string>
+    <string name="AQ3_choice3">25%</string>
+    <string name="advanced_Q4">How much has sea level risen since 1993?</string>
+    <string name="AQ4_choice1">8.28 cm</string>
+    <string name="AQ4_choice2">10.42 cm</string>
+    <string name="AQ4_choice3">4.71 cm</string>
+    <string name="advanced_Q5">Which of the following countries are currently signatories of the Paris Agreement?</string>
+    <string name="AQ5_choice1">United States</string>
+    <string name="AQ5_choice2">Syria</string>
+    <string name="AQ5_choice3">Russia</string>
+    <string name="AQ5_choice4">Nicaragua</string>
+    <string name="advanced_Q6">Which country is planing to withdraw the Paris Agreement?</string>
+    <string name="advanced_Q7">What was agreed to in the Paris Agreement?</string>
+    <string name="AQ7_choice1">To protect biodiversity and end the deforestation of the world’s rainforests.</string>
+    <string name="AQ7_choice2">To pursue a goal of 100% clean, renewable energy.</string>
+    <string name="AQ7_choice3">To keep global temperature rise well below 2℃ pre-industrial levels and to pursue a path to limit warming to 1.5℃.</string>
+    <string name="bAnswer1">“Global warming” refers to the long-term warming of the planet.\n“Climate change” encompasses global warming, but refers to the broader range of changes that are happening to our planet.</string>
+    <string name="bReference1"><a href="https://climate.nasa.gov/faq">Learn More</a></string>
+    <string name="bAnswer2">All of these are problems associated with climate change. The majority of scientists agree that many of these effects are caused by human contribution to the greenhouse effect.</string>
+    <string name="bReference2"><a href="https://climate.nasa.gov/effects">Learn More</a></string>
+    <string name="bAnswer3">The Earth receives solar radiation from the sun. Passing through the atmosphere, some radiation is absorbed by the Earth, while some is reflected back to space. When the exchange of incoming and outgoing radiation occurs, some of the radiation becomes trapped by gases in the atmosphere. This creates a “greenhouse” effect and warms the planet.</string>
+    <string name="bReference3"><a href="https://www.livescience.com/37743-greenhouse-effect.html">Learn More</a></string>
+    <string name="bAnswer4">Greenhouse gases may be a result of natural occurrence or human activity. These gases include water vapor, carbon dioxide, methane, nitrous oxide, and ozone. Fluorinated gases are also considered to be greenhouse gases.</string>
+    <string name="bReference4"><a href="https://www.acs.org/content/acs/en/climatescience/greenhousegases/whichgases.html">Learn More</a></string>
+    <string name="bAnswer5">According to the EPA, China is currently the top emitter of carbon dioxide, accounting for 30% of global carbon emissions. The United States ranks as the second top emitter at 15%.</string>
+    <string name="bReference5"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data">Learn More</a></string>
+    <string name="bAnswer6">More than a third of food produced globally never makes it to the table. During the production, harvesting, transporting, and packaging of the wasted food, more than 3.3 billion metric tons of carbon dioxide is emitted.</string>
+    <string name="bReference6"><a href="https://news.nationalgeographic.com/news/2015/01/150122-food-waste-climate-change-hunger">Learn More</a></string>
+    <string name="bAnswer7">The electricity and heat production sector emits the largest percentage of global greenhouse gas emissions at 25%. Agriculture, forestry, and other land use sector is a close second at 24%.</string>
+    <string name="bReference7"><a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-emissions-data">Learn More</a></string>
+    <string name="thanks">Thank You</string>
+    <string name="userName">...</string>
+    <string name="yourScoreIs">Your Score Is:</string>
+    <string name="score">...</string>
+    <string name="isHappy">Is Happy !</string>
+    <string name="learnMore">Additional Links (Learn More):</string>
+    <string name="nasa"><a href="https://climate.nasa.gov">Nasa</a></string>
+    <string name="beforeTheFlood"><a href="https://www.beforetheflood.com">Before The Flood</a></string>
+    <string name="nationalGeographic"><a href="https://www.nationalgeographic.com/environment/climate-change">National Geographic</a></string>
+    <string name="aAnswer1">The average global temperature has risen by 0.94 degrees C since the twentieth century with more significant warming toward the poles than in the equatorial region.</string>
+    <string name="aReference1"><a href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature">Learn More</a></string>
+    <string name="aAnswer2">The concentration of CO2 now is 407.62 parts per million (ppm). The last time CO2 concentration was so high was about 4m years ago, when the global temperature was 3C-4C hotter and sea level was 5-40m higher.</string>
+    <string name="aReference2"><a href="https://climate.nasa.gov/vital-signs/carbon-dioxide">Learn More</a></string>
+    <string name="aAnswer3">40% of Arctic ice area has been lost in the last few decades, one of the most obvious signs of global warming. It is at least 1,450 years since such melting occurred.</string>
+    <string name="aReference3"><a href="https://climate.nasa.gov/vital-signs/arctic-sea-ice">Learn More</a></string>
+    <string name="aAnswer4">Satellite data shows global sea level has risen by more than 8cm since 1993, driven by melting ice and the warming of sea water, which expands its volume.</string>
+    <string name="aReference4"><a href="https://climate.nasa.gov/vital-signs/sea-level">Learn More</a></string>
+    <string name="aAnswer5">Russia and the United States are signatories of the 2015 Paris Accord as are most of the world’s nations. As of June 2017, only Nicaragua and Syria have not signed the Paris Accord with the United States planning to withdraw.</string>
+    <string name="aReference5"><a href="http://climateanalytics.org/briefings/ratification-tracker.html">Learn More</a></string>
+    <string name="aAnswer6">The Paris Agreement aims to keep the overall increase in global temperatures below 2 degrees Celsius, with the hope of limiting it to 1.5 degrees Celsius. Scientists believe that these are the largest increases in global temperature that we could experience without causing catastrophic change to the Earth’s climate.</string>
+    <string name="aReference6"><a href="https://www.earthday.org/2016/10/21/prepared-western-powers-paris-agreement">Learn More</a></string>
+
+
+
+
+
+</resources>

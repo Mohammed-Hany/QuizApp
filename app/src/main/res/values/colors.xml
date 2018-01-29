@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0f6e17</color>
+    <color name="card">#D9FFFFFF</color>
+    <color name="reference">#D98bf0ec</color>
+    <color name="mainWhite">#73FFFFFF</color>
+    <color name="spinnerBackGround">#b5f5f4</color>
+    <color name="Links">#1d708a</color>
+    <color name="bar">#15bfcf</color>
+</resources>
